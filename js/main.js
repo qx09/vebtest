@@ -1,5 +1,6 @@
-import { loadComponents } from './utils/component-loader.js?v=6';
-import { i18n } from './i18n/engine.js?v=6';
+import { loadComponents } from './utils/component-loader.js?v=7';
+import { i18n } from './i18n/engine.js?v=7';
+import './components/navbar.js?v=7';
 
 const initApp = async () => {
     console.log('Initializing Mashzavod Architecture...');
