@@ -1,5 +1,5 @@
-import { loadComponents } from './utils/component-loader.js';
-import { i18n } from './i18n/engine.js';
+import { loadComponents } from './utils/component-loader.js?v=6';
+import { i18n } from './i18n/engine.js?v=6';
 
 const initApp = async () => {
     console.log('Initializing Mashzavod Architecture...');
