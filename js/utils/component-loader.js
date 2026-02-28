@@ -3,16 +3,18 @@
  * Recursively fetches HTML modules based on the `data-include` attribute
  * and replaces the placeholder element with the fetched HTML.
  */
+export const basePath = '/vebtest';
+
 export async function loadComponents(container = document) {
   const elements = container.querySelectorAll('[data-include]');
 
-  // We use Promise.all to load components in parallel for speed
   const loadPromises = Array.from(elements).map(async (el) => {
     const file = el.getAttribute('data-include');
     try {
-      // Small fix: Ensure paths behave well locally by removing leading slash if needed, 
-      // though http-server usually handles absolute paths fine.
-      let url = file.startsWith('/') ? file : `/${file}`;
+      // Clean leading slashes or dots to safely append to base path
+      const cleanFile = file.replace(/^\.?\//, '');
+      let url = `${basePath}/${cleanFile}`;
+
       // Force cache bypassing during active development
       url = `${url}?t=${Date.now()}`;
       const response = await fetch(url);

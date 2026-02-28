@@ -1,3 +1,5 @@
+import { basePath } from '../utils/component-loader.js';
+
 /**
  * I18n Translation Engine
  * Loads JSON dictionaries and translates all elements with `data-i18n`
@@ -23,7 +25,7 @@ export class TranslationEngine {
 
     async loadDictionary(lang) {
         try {
-            const response = await fetch(`./locales/${lang}.json?t=${Date.now()}`);
+            const response = await fetch(`${basePath}/locales/${lang}.json?t=${Date.now()}`);
             if (response.ok) {
                 this.dictionary = await response.json();
                 this.currentLang = lang;
