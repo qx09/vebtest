@@ -39,7 +39,7 @@
                         tolerances are maintained even during the highest stress roughing passes.
                     </p>
 
-                    <div class="feature-grid" style="grid-template-columns: 1fr 1fr;">
+                    <div class="feature-grid">
                         <div class="feature-card"
                             style="flex-direction: column; align-items: flex-start; text-align: left;">
                             <div class="feature-icon" style="margin-bottom: var(--space-2);"><svg width="24" height="24"
@@ -63,7 +63,8 @@
                                     <path
                                         d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
                                     </path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <strong class="text-accent-orange" data-i18n="app_aero_2_title"
                                 style="margin-bottom: var(--space-1);">Composite Trimming</strong>
                             <span class="text-sm text-secondary" data-i18n="app_aero_2_text">Dust-extractive automated
@@ -162,6 +163,12 @@
         grid-template-columns: 1fr;
         gap: var(--space-4);
         margin-top: var(--space-8);
+    }
+
+    @media (min-width: 768px) {
+        .feature-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     .feature-card {
