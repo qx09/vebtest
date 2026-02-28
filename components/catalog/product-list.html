@@ -1,0 +1,29 @@
+<div class="product-list">
+    <div data-include="/components/catalog/product-card.html"></div>
+    <div data-include="/components/catalog/product-card.html"></div>
+    <div data-include="/components/catalog/product-card.html"></div>
+    <div data-include="/components/catalog/product-card.html"></div>
+    <div data-include="/components/catalog/product-card.html"></div>
+    <div data-include="/components/catalog/product-card.html"></div>
+</div>
+
+<style>
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    @media (min-width: 768px) {
+        .product-list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-8);
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .product-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>

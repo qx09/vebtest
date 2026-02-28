@@ -1,0 +1,197 @@
+<!-- Applications Page Wrapper -->
+<div class="page page-applications">
+    <!-- Premium Hero Header -->
+    <section class="premium-hero">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <span class="badge"
+                    style="margin-bottom: var(--space-4); display: inline-block; background: rgba(56, 189, 114, 0.1); color: var(--accent-green); padding: var(--space-1) var(--space-3); border-radius: 100px; font-weight: var(--font-bold); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid rgba(56, 189, 114, 0.2);">Global
+                    Solutions</span>
+                <h1 class="heading-xl text-white" data-i18n="app_title" style="margin-bottom: var(--space-6);">Industry
+                    Applications</h1>
+                <p class="text-gray-200" data-i18n="app_sub"
+                    style="font-size: var(--text-lg); line-height: var(--lh-loose);">
+                    Powering the most demanding sectors on the planet, from aerospace defense to deep-sea energy
+                    extraction.
+                </p>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section-padding bg-light" style="overflow: hidden;">
+        <div class="container">
+            <div class="foundry-layout">
+                <div class="foundry-content" style="order: 2;">
+                    <h2 class="heading-lg"
+                        style="margin-bottom: var(--space-6); position: relative; padding-bottom: var(--space-4);"
+                        data-i18n="app_aero_title">
+                        Aerospace & Defense
+                        <span
+                            style="position: absolute; bottom: 0; left: 0; width: 60px; height: 4px; background: var(--accent-orange); border-radius: 2px;"></span>
+                    </h2>
+                    <p class="text-muted" data-i18n="app_aero_text"
+                        style="margin-bottom: var(--space-8); line-height: 1.8; font-size: var(--text-md);">
+                        The aerospace sector demands unequivocally zero margin for error. Our multi-axis CNC centers are
+                        employed by top-tier defense contractors to mill turbine chassis and fuselage components out of
+                        solid titanium blocks. The supreme rigidity of our cast iron beds ensures that sub-micron
+                        tolerances are maintained even during the highest stress roughing passes.
+                    </p>
+
+                    <div class="feature-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div class="feature-card"
+                            style="flex-direction: column; align-items: flex-start; text-align: left;">
+                            <div class="feature-icon" style="margin-bottom: var(--space-2);"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M21.2 8.4c.5.5.8 1.1.8 1.6 0 1.5-1.1 2.8-2.6 2.8-1.5 0-2.8-1.1-2.8-2.6 0-.5.3-1.1.8-1.6l-5.6-5.6a2.6 2.6 0 1 0-2.2 2.2l5.6 5.6c-.5.5-.8 1.1-.8 1.6 0 1.5 1.1 2.8 2.6 2.8 1.5 0 2.8-1.1 2.8-2.6 0-.5-.3-1.1-.8-1.6l5.6-5.6c.5-.5 1.1-.8 1.6-.8 1.5 0 2.8 1.1 2.8 2.6z">
+                                    </path>
+                                </svg></div>
+                            <strong class="text-accent-green" data-i18n="app_aero_1_title"
+                                style="margin-bottom: var(--space-1);">Titanium Milling</strong>
+                            <span class="text-sm text-secondary" data-i18n="app_aero_1_text">High-torque constant
+                                velocity tools.</span>
+                        </div>
+                        <div class="feature-card"
+                            style="flex-direction: column; align-items: flex-start; text-align: left;">
+                            <div class="feature-icon"
+                                style="margin-bottom: var(--space-2); color: var(--accent-orange); background: rgba(224, 73, 21, 0.1);">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg></div>
+                            <strong class="text-accent-orange" data-i18n="app_aero_2_title"
+                                style="margin-bottom: var(--space-1);">Composite Trimming</strong>
+                            <span class="text-sm text-secondary" data-i18n="app_aero_2_text">Dust-extractive automated
+                                routers.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="foundry-media" style="order: 1;">
+                    <div class="media-frame">
+                        <img src="/assets/images/generated/aerospace_application.jpg"
+                            alt="Aerospace manufacturing facility">
+                        <div class="media-accent-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    /* Premium Hero Styles */
+    .premium-hero {
+        position: relative;
+        padding: 120px 0;
+        background-color: var(--slate-950);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 150%, rgba(224, 73, 21, 0.15) 0%, transparent 60%),
+            radial-gradient(circle at 100% 0%, rgba(56, 189, 114, 0.1) 0%, transparent 40%);
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    /* Foundry Layout Styles */
+    .foundry-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+        align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+        .foundry-layout {
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-16);
+        }
+    }
+
+    /* Premium Media Frame */
+    .media-frame {
+        position: relative;
+        z-index: 1;
+    }
+
+    .media-frame img {
+        width: 100%;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .media-accent-box {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        bottom: -20px;
+        left: 20px;
+        background-color: var(--accent-orange);
+        border-radius: var(--radius-lg);
+        z-index: 1;
+        opacity: 0.1;
+    }
+
+    @media (min-width: 1024px) {
+        .media-accent-box {
+            top: 40px;
+            right: -40px;
+            bottom: -40px;
+            left: 40px;
+        }
+    }
+
+    /* Feature Grid */
+    .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+        margin-top: var(--space-8);
+    }
+
+    .feature-card {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        padding: var(--space-4);
+        background: var(--bg-primary);
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-md);
+        font-weight: var(--font-medium);
+        color: var(--text-primary);
+        transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+        border-color: rgba(56, 189, 114, 0.3);
+    }
+
+    .feature-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(56, 189, 114, 0.1);
+        color: var(--accent-green);
+        flex-shrink: 0;
+    }
+</style>

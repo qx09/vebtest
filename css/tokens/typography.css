@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Typography Rules
+   Modern, B2B, Trustworthy Fonts
+   ========================================================================== */
+
+/* Using Inter / Open Sans as a reliable modern industrial font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* Font Families */
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-heading: 'Outfit', var(--font-sans);
+    /* 'Outfit' brings a bit more architectural/industrial tech feel to headers */
+
+    /* Font Sizes */
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+    --text-3xl: 1.875rem;
+    /* 30px */
+    --text-4xl: 2.25rem;
+    /* 36px */
+    --text-5xl: 3rem;
+    /* 48px */
+    --text-6xl: 3.75rem;
+    /* 60px */
+    --text-7xl: 4.5rem;
+    /* 72px */
+
+    /* Line Heights */
+    --lh-tight: 1.1;
+    --lh-snug: 1.25;
+    --lh-normal: 1.5;
+    --lh-loose: 1.75;
+
+    /* Weights */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--lh-normal);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-bold);
+    line-height: var(--lh-tight);
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}

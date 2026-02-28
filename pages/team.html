@@ -1,0 +1,143 @@
+<!-- Team Page Wrapper -->
+<div class="page page-team">
+    <!-- Premium Hero Header -->
+    <section class="premium-hero">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <span class="badge"
+                    style="margin-bottom: var(--space-4); display: inline-block; background: rgba(224, 73, 21, 0.1); color: var(--accent-orange); padding: var(--space-1) var(--space-3); border-radius: 100px; font-weight: var(--font-bold); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid rgba(224, 73, 21, 0.2);">Global
+                    Talent</span>
+                <h1 class="heading-xl text-white" data-i18n="team_title" style="margin-bottom: var(--space-6);">The
+                    Engineering Core</h1>
+                <p class="text-gray-200" data-i18n="team_desc"
+                    style="font-size: var(--text-lg); line-height: var(--lh-loose);">
+                    Behind every monolithic lathe and high-pressure compressor is a dedicated team of world-class
+                    engineers.
+                </p>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="section-padding bg-light" style="overflow: hidden;">
+        <div class="container">
+            <div class="foundry-layout">
+                <div class="foundry-content" style="order: 1;">
+                    <h2 class="heading-lg"
+                        style="margin-bottom: var(--space-6); position: relative; padding-bottom: var(--space-4);">
+                        Decades of Collective Experience
+                        <span
+                            style="position: absolute; bottom: 0; left: 0; width: 60px; height: 4px; background: var(--accent-green); border-radius: 2px;"></span>
+                    </h2>
+                    <p class="text-muted"
+                        style="margin-bottom: var(--space-8); line-height: 1.8; font-size: var(--text-md);">
+                        At Mashzavod Resource Energy, our team represents decades of collective experience in structural
+                        metallurgy, fluid dynamics, and automated robotics. We recruit only the top tier of industrial
+                        design talent.
+                    </p>
+
+                    <div style="display: flex; gap: var(--space-8); margin-bottom: var(--space-8);">
+                        <div>
+                            <span class="text-accent-green heading-md" style="font-size: 3rem;">250+</span>
+                            <span data-i18n="team_cert"
+                                style="display: block; font-weight: var(--font-bold); color: var(--text-secondary); text-transform: uppercase; font-size: var(--text-xs); margin-top: var(--space-2); letter-spacing: 0.05em;">Certified
+                                Engineers</span>
+                        </div>
+                        <div>
+                            <span class="text-accent-orange heading-md" style="font-size: 3rem;">15+</span>
+                            <span data-i18n="team_loc"
+                                style="display: block; font-weight: var(--font-bold); color: var(--text-secondary); text-transform: uppercase; font-size: var(--text-xs); margin-top: var(--space-2); letter-spacing: 0.05em;">Global
+                                Locations</span>
+                        </div>
+                    </div>
+                    <a href="#/pages/contacts.html" class="btn btn-primary" data-i18n="btn_consult"
+                        style="padding: var(--space-4) var(--space-8); box-shadow: 0 10px 20px rgba(56, 189, 114, 0.2);">Consult
+                        With Our Experts</a>
+                </div>
+
+                <div class="foundry-media" style="order: 2;">
+                    <div class="media-frame">
+                        <img src="/assets/images/generated/team_engineers.jpg"
+                            alt="Diverse engineering team reviewing blueprints">
+                        <div class="media-accent-box"
+                            style="background-color: var(--accent-green); right: 20px; left: -20px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- (Styles are already loaded globally if we reuse the classes from production.html, but to avoid bugs we can redeclare or just rely on the existing ones if we put them in a core css. For this shell-based app, we'll embed the necessary ones here if they aren't global yet. Wait, since production.html embedded them locally, we need them here too.) -->
+<style>
+    /* Premium Hero Styles */
+    .premium-hero {
+        position: relative;
+        padding: 120px 0;
+        background-color: var(--slate-950);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 150%, rgba(224, 73, 21, 0.15) 0%, transparent 60%),
+            radial-gradient(circle at 100% 0%, rgba(56, 189, 114, 0.1) 0%, transparent 40%);
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    /* Foundry Layout Styles */
+    .foundry-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+        align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+        .foundry-layout {
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-16);
+        }
+    }
+
+    /* Premium Media Frame */
+    .media-frame {
+        position: relative;
+        z-index: 1;
+    }
+
+    .media-frame img {
+        width: 100%;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .media-accent-box {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        bottom: -20px;
+        left: 20px;
+        background-color: var(--accent-orange);
+        border-radius: var(--radius-lg);
+        z-index: 1;
+        opacity: 0.1;
+    }
+
+    @media (min-width: 1024px) {
+        .media-accent-box {
+            top: 40px;
+            right: -40px;
+            bottom: -40px;
+            left: 40px;
+        }
+    }
+</style>

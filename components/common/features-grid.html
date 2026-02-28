@@ -1,0 +1,108 @@
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="text-center"
+            style="margin-bottom: var(--space-12); max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h2 class="heading-md" data-i18n="feat_global_title">Global Scale, Precision Engineering</h2>
+            <p class="text-muted" style="margin-top: var(--space-4);" data-i18n="feat_global_desc">From the conceptual
+                drafting of monolithic
+                cast-iron beds to the high-tolerance milling of precision actuators, we engineer solutions designed
+                specifically for massive scale and extreme stress environments.</p>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon text-accent-green">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title" data-i18n="feat_1_title">Modular Architectures</h3>
+                <p class="feature-desc" data-i18n="feat_1_desc">Our industrial equipment is designed as hyper-modular
+                    cells, allowing you to
+                    scale up specific operations safely without replacing core monoliths.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon text-accent-orange">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title" data-i18n="feat_2_title">24/7 Energy Continuity</h3>
+                <p class="feature-desc" data-i18n="feat_2_desc">We build extraction pumps and compressors with
+                    triple-redundancy fail-safes.
+                    Uptime is our ultimate metric for the resource sector.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon text-accent-green">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+                <h3 class="feature-title" data-i18n="feat_3_title">Precision Milling</h3>
+                <p class="feature-desc" data-i18n="feat_3_desc">Utilizing closed-loop servo feedback mechanisms, our
+                    multi-axis CNC lathes
+                    achieve tolerances measuring in the single microns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    @media (min-width: 768px) {
+        .features-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .feature-card {
+        background: var(--bg-primary);
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-lg);
+        padding: var(--space-8);
+        box-shadow: var(--shadow-sm);
+        transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--accent-green);
+    }
+
+    .feature-icon {
+        margin-bottom: var(--space-4);
+        padding: var(--space-3);
+        background: var(--bg-secondary);
+        display: inline-flex;
+        border-radius: var(--radius-md);
+    }
+
+    .feature-title {
+        font-family: var(--font-heading);
+        font-size: var(--text-lg);
+        font-weight: var(--font-bold);
+        margin-bottom: var(--space-2);
+    }
+
+    .feature-desc {
+        color: var(--text-secondary);
+        line-height: var(--lh-loose);
+        font-size: var(--text-sm);
+    }
+</style>

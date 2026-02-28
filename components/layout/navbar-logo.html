@@ -1,0 +1,48 @@
+<a href="#/pages/home.html" class="navbar-logo">
+    <div class="navbar-logo__mark">
+        <!-- Simplified SVG matching the gears geometry if logo image fails -->
+        <svg width="32" height="32" viewBox="0 0 100 100" fill="none" class="navbar-logo__icon">
+            <path
+                d="M50 5 L55 20 L75 15 L70 30 L85 40 L70 50 L85 60 L70 70 L75 85 L55 80 L50 95 L45 80 L25 85 L30 70 L15 60 L30 50 L15 40 L30 30 L25 15 L45 20 Z"
+                stroke="var(--accent-green)" stroke-width="8" />
+            <circle cx="50" cy="50" r="25" fill="none" stroke="var(--accent-orange)" stroke-width="8" />
+        </svg>
+    </div>
+    <div class="navbar-logo__text">
+        <span class="navbar-logo__brand">MASHZAVOD</span>
+        <span class="navbar-logo__sub">RESOURCE ENERGY</span>
+    </div>
+</a>
+
+<style>
+    /* Logo specific styling */
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        text-decoration: none;
+    }
+
+    .navbar-logo__text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+    }
+
+    .navbar-logo__brand {
+        font-family: var(--font-heading);
+        font-weight: var(--font-extrabold);
+        font-size: var(--text-lg);
+        color: var(--text-primary);
+        letter-spacing: 0.02em;
+    }
+
+    .navbar-logo__sub {
+        font-family: var(--font-sans);
+        font-weight: var(--font-semibold);
+        font-size: var(--text-xs);
+        color: var(--accent-orange);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+</style>

@@ -1,0 +1,64 @@
+<div class="lang-switch">
+    <button class="lang-switch__btn" aria-haspopup="listbox" aria-expanded="false">
+        <span class="lang-switch__current">EN</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"></path>
+        </svg>
+    </button>
+    <ul class="lang-switch__dropdown" role="listbox">
+        <li role="option" class="lang-switch__option" data-lang="en">EN</li>
+        <li role="option" class="lang-switch__option" data-lang="uk">UK</li>
+        <li role="option" class="lang-switch__option" data-lang="ru">RU</li>
+    </ul>
+</div>
+
+<style>
+    .lang-switch {
+        position: relative;
+    }
+
+    .lang-switch__btn {
+        display: flex;
+        align-items: center;
+        gap: var(--space-1);
+        font-size: var(--text-sm);
+        font-weight: var(--font-bold);
+        color: var(--text-primary);
+        padding: var(--space-2);
+    }
+
+    .lang-switch__dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-sm);
+        box-shadow: var(--shadow-md);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all var(--transition-fast);
+        min-width: 60px;
+        z-index: 50;
+    }
+
+    .lang-switch:hover .lang-switch__dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .lang-switch__option {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--text-sm);
+        cursor: pointer;
+        transition: background var(--transition-fast);
+        text-align: center;
+    }
+
+    .lang-switch__option:hover {
+        background: var(--gray-50);
+        color: var(--accent-green);
+    }
+</style>

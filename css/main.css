@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Main Stylesheet Shell
+   Imports all global utilities. 
+   Component specific CSS will be lazy-loaded by the component itself.
+   ========================================================================== */
+
+/* Utility Classes */
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-gray-200 {
+    color: var(--gray-200) !important;
+}
+
+.text-accent-green {
+    color: var(--accent-green);
+}
+
+.text-accent-orange {
+    color: var(--accent-orange);
+}
+
+/* Typography Utilities */
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-md {
+    font-size: var(--text-base);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-normal {
+    font-weight: var(--font-normal);
+}
+
+.font-medium {
+    font-weight: var(--font-medium);
+}
+
+.font-semibold {
+    font-weight: var(--font-semibold);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.bg-slate {
+    background-color: var(--slate-950);
+    color: var(--text-inverse);
+}
+
+.bg-light {
+    background-color: var(--bg-primary);
+}
+
+.section-padding {
+    padding-block: var(--space-20);
+}
+
+.heading-lg {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-extrabold);
+    margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .heading-lg {
+        font-size: var(--text-5xl);
+    }
+}
+
+.heading-md {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-4);
+}
+
+.text-muted {
+    color: var(--text-secondary);
+}
+
+/* Base button styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-sm);
+    /* Industrial sharp look */
+    font-weight: var(--font-semibold);
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: var(--text-sm);
+}
+
+.btn-primary {
+    background-color: var(--accent-green);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-green-hover);
+}
+
+.btn-outline {
+    border: 2px solid var(--accent-orange);
+    color: var(--accent-orange);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-orange);
+    color: white;
+}
+
+/* Animations loading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}

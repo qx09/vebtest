@@ -1,0 +1,28 @@
+<!-- Home Page Wrapper -->
+<div class="page page-home">
+
+    <!-- Hero Section Injection -->
+    <div data-include="/components/hero/hero.html"></div>
+
+    <!-- Features Section Injection -->
+    <div data-include="/components/common/features-grid.html"></div>
+
+    <!-- Featured Categories Section -->
+    <section class="section-padding bg-primary">
+        <div class="container">
+            <h2 class="heading-md text-center" style="margin-bottom: var(--space-10);" data-i18n="home_divisions">Our
+                Core Divisions</h2>
+            <!-- Reusing the deep catalog grid -->
+            <div data-include="/components/catalog/category-grid.html"></div>
+        </div>
+    </section>
+
+</div>
+
+<style>
+    /* Page specific minimal adjustments */
+    .page {
+        width: 100%;
+        animation: fadeIn 0.4s ease forwards;
+    }
+</style>

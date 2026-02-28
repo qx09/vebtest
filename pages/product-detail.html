@@ -1,0 +1,93 @@
+<!-- Product Detail Page Wrapper -->
+<div class="page page-product-detail">
+
+    <section class="section-padding bg-light">
+        <div class="container">
+
+            <!-- Breadcrumb partial -->
+            <nav class="breadcrumb" style="margin-bottom: var(--space-8);">
+                <a href="#/pages/products-category.html" class="text-accent-green" data-i18n="prod_back"
+                    style="font-weight: var(--font-bold); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">&larr;
+                    Back to Heavy Machining</a>
+            </nav>
+
+            <div class="product-layout">
+
+                <!-- Image Gallery Component -->
+                <div class="product-gallery">
+                    <img src="/assets/images/generated/product_lathe.jpg" alt="MRE-900 CNC Heavy Lathe" loading="lazy"
+                        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxZTI5M2IiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiM5Y2EzYWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBQZW5kaW5nPC90ZXh0Pjwvc3ZnPg=='">
+                    <!-- Thumbnails could go here -->
+                    <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4);">
+                        <div
+                            style="width: 80px; height: 60px; background: var(--gray-200); border-radius: var(--radius-sm);">
+                        </div>
+                        <div
+                            style="width: 80px; height: 60px; background: var(--gray-200); border-radius: var(--radius-sm);">
+                        </div>
+                        <div
+                            style="width: 80px; height: 60px; background: var(--gray-200); border-radius: var(--radius-sm);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Component -->
+                <div class="product-info">
+                    <span data-i18n="prod_sku"
+                        style="color: var(--accent-orange); font-weight: var(--font-bold); font-size: var(--text-sm); letter-spacing: 0.05em;">SKU:
+                        LTH-900-X</span>
+                    <h1 class="heading-md" style="font-size: var(--text-3xl); margin-top: var(--space-2);"
+                        data-i18n="prod_name">MRE-900 CNC
+                        Heavy Lathe</h1>
+
+                    <p class="text-muted" style="margin-bottom: var(--space-6); line-height: var(--lh-loose);"
+                        data-i18n="prod_desc">
+                        The MRE-900 is our flagship heavy lathe designed for extreme precision on monolithic workpieces
+                        up to 50 tons. Featuring an oversized hydro-static spindle and cast-iron monolithic bed for
+                        ultimate rigidity and vibration dampening.
+                    </p>
+
+                    <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-10);">
+                        <a href="#/pages/contacts.html" class="btn btn-primary" data-i18n="prod_req_quote"
+                            style="padding: var(--space-4) var(--space-8);">Request Quote</a>
+                        <button class="btn btn-outline" style="padding: var(--space-4) var(--space-8);"
+                            data-i18n="prod_consult">Consult
+                            Engineer</button>
+                    </div>
+
+                    <!-- Specs Component -->
+                    <div data-include="/components/catalog/product-specs-table.html"></div>
+
+                    <!-- Downloads Component -->
+                    <div data-include="/components/catalog/product-downloads.html"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<style>
+    .product-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+    }
+
+    @media (min-width: 1024px) {
+        .product-layout {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .product-gallery>img {
+        width: 100%;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        background-color: var(--slate-900);
+    }
+</style>

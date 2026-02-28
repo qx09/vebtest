@@ -1,0 +1,85 @@
+<form class="contact-form">
+    <div class="contact-form__row">
+        <div class="contact-form__group">
+            <label for="name" class="contact-form__label">Full Name</label>
+            <input type="text" id="name" class="contact-form__input" placeholder="John Doe" required>
+        </div>
+        <div class="contact-form__group">
+            <label for="company" class="contact-form__label">Company</label>
+            <input type="text" id="company" class="contact-form__input" placeholder="Acme Corp" required>
+        </div>
+    </div>
+
+    <div class="contact-form__group">
+        <label for="email" class="contact-form__label">Work Email</label>
+        <input type="email" id="email" class="contact-form__input" placeholder="john@acmecorp.com" required>
+    </div>
+
+    <div class="contact-form__group">
+        <label for="inquiry" class="contact-form__label">Inquiry Type</label>
+        <select id="inquiry" class="contact-form__input">
+            <option value="equipment">Equipment Quote</option>
+            <option value="service">Service & Maintenance</option>
+            <option value="custom">Custom Engineering</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="contact-form__group">
+        <label for="message" class="contact-form__label">Project Details</label>
+        <textarea id="message" class="contact-form__input" rows="5" placeholder="Tell us about your requirements..."
+            required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+</form>
+
+<style>
+    .contact-form {
+        background: var(--bg-secondary);
+        padding: var(--space-8);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        border: 1px solid var(--gray-200);
+    }
+
+    .contact-form__row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    @media (min-width: 640px) {
+        .contact-form__row {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .contact-form__group {
+        margin-bottom: var(--space-4);
+    }
+
+    .contact-form__label {
+        display: block;
+        font-weight: var(--font-bold);
+        font-size: var(--text-sm);
+        color: var(--text-primary);
+        margin-bottom: var(--space-2);
+    }
+
+    .contact-form__input {
+        width: 100%;
+        padding: var(--space-3) var(--space-4);
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-md);
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        transition: border-color var(--transition-fast);
+    }
+
+    .contact-form__input:focus {
+        outline: none;
+        border-color: var(--accent-green);
+        box-shadow: 0 0 0 3px rgba(26, 156, 64, 0.1);
+    }
+</style>

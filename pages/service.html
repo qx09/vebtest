@@ -1,0 +1,145 @@
+<!-- Service Page Wrapper -->
+<div class="page page-service">
+    <!-- Premium Hero Header -->
+    <section class="premium-hero">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <span class="badge"
+                    style="margin-bottom: var(--space-4); display: inline-block; background: rgba(56, 189, 114, 0.1); color: var(--accent-green); padding: var(--space-1) var(--space-3); border-radius: 100px; font-weight: var(--font-bold); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid rgba(56, 189, 114, 0.2);">Support
+                    24/7</span>
+                <h1 class="heading-xl text-white" data-i18n="srv_title" style="margin-bottom: var(--space-6);">Global
+                    Maintenance & Calibration</h1>
+                <p class="text-gray-200" data-i18n="srv_sub"
+                    style="font-size: var(--text-lg); line-height: var(--lh-loose);">
+                    Maximizing your uptime with rapid deployment teams and certified OEM replacement parts worldwide.
+                </p>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section-padding bg-light" style="overflow: hidden;">
+        <div class="container">
+            <div class="foundry-layout">
+                <div class="foundry-content" style="order: 2;">
+                    <h2 class="heading-lg"
+                        style="margin-bottom: var(--space-6); position: relative; padding-bottom: var(--space-4);"
+                        data-i18n="srv_prec_title">
+                        Precision Calibration Service
+                        <span
+                            style="position: absolute; bottom: 0; left: 0; width: 60px; height: 4px; background: var(--accent-orange); border-radius: 2px;"></span>
+                    </h2>
+                    <p class="text-muted" data-i18n="srv_prec_text"
+                        style="margin-bottom: var(--space-8); line-height: 1.8; font-size: var(--text-md);">
+                        Mashzavod Resource Energy doesn't just build machinery; we ensure it operates at peak original
+                        specification for decades. Our flying service teams deploy globally with laser interferometry
+                        tools to recalibrate worn axes, rebuild hydro-static spindles, and perform preventative
+                        maintenance on colossal energy pumps.
+                    </p>
+
+                    <div
+                        style="background: var(--bg-primary); border: 1px solid var(--gray-200); padding: var(--space-6); border-radius: var(--radius-md); border-left: 4px solid var(--accent-orange); box-shadow: var(--shadow-sm);">
+                        <h4 data-i18n="srv_emerg_title"
+                            style="font-family: var(--font-heading); font-size: var(--text-lg); margin-bottom: var(--space-2); color: var(--text-primary); display: flex; align-items: center; gap: var(--space-2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            24/7 Emergency Support
+                        </h4>
+                        <p class="text-md text-secondary" data-i18n="srv_emerg_text"
+                            style="line-height: var(--lh-loose);">
+                            Dial our priority line for immediate dispatch of technical engineers for Tier-1 faults in
+                            the energy extraction sector.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="foundry-media" style="order: 1;">
+                    <div class="media-frame">
+                        <img src="/assets/images/generated/service_maintenance.jpg"
+                            alt="Engineer performing precision maintenance">
+                        <div class="media-accent-box"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    /* Premium Hero Styles */
+    .premium-hero {
+        position: relative;
+        padding: 120px 0;
+        background-color: var(--slate-950);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 150%, rgba(224, 73, 21, 0.15) 0%, transparent 60%),
+            radial-gradient(circle at 100% 0%, rgba(56, 189, 114, 0.1) 0%, transparent 40%);
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    /* Foundry Layout Styles */
+    .foundry-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+        align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+        .foundry-layout {
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-16);
+        }
+    }
+
+    /* Premium Media Frame */
+    .media-frame {
+        position: relative;
+        z-index: 1;
+    }
+
+    .media-frame img {
+        width: 100%;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .media-accent-box {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        bottom: -20px;
+        left: 20px;
+        background-color: var(--accent-orange);
+        border-radius: var(--radius-lg);
+        z-index: 1;
+        opacity: 0.1;
+    }
+
+    @media (min-width: 1024px) {
+        .media-accent-box {
+            top: 40px;
+            right: -40px;
+            bottom: -40px;
+            left: 40px;
+        }
+    }
+</style>

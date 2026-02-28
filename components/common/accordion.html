@@ -1,0 +1,147 @@
+<div class="accordion" id="faq-accordion">
+    <!-- FAQ Item 1 -->
+    <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title" data-i18n="faq_q1">What industries do Mashzavod machines support?</span>
+            <span class="accordion-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-inner">
+                <p data-i18n="faq_a1">Our heavy machining and resource energy solutions are primarily deployed in
+                    aerospace, shipbuilding,
+                    heavy manufacturing, and oil & gas extraction sectors globally. We specialize in providing extreme
+                    tolerance machinery for monolithic parts.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title" data-i18n="faq_q2">Do you offer global installation and commissioning?</span>
+            <span class="accordion-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-inner">
+                <p data-i18n="faq_a2">Yes. Our engineering teams deploy worldwide to handle the complete end-to-end
+                    installation,
+                    calibration, and final commissioning of all large-scale CNC equipment and energy extraction rigs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title" data-i18n="faq_q3">What is the standard lead time for a heavy lathe like the
+                MRE-900?</span>
+            <span class="accordion-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </span>
+        </button>
+        <div class="accordion-content">
+            <div class="accordion-inner">
+                <p data-i18n="faq_a3">Depending on the required custom configuration and spindle capacity, standard lead
+                    times range from 6
+                    to 9 months. This includes the casting of the monolithic bed and rigorous factory acceptance testing
+                    (FAT).</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .accordion {
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        background: var(--bg-secondary);
+    }
+
+    .accordion-item:not(:last-child) {
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+    .accordion-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-4) var(--space-6);
+        background: var(--bg-secondary);
+        color: var(--text-primary);
+        font-family: var(--font-heading);
+        font-weight: var(--font-bold);
+        font-size: var(--text-lg);
+        text-align: left;
+        transition: background var(--transition-fast), color var(--transition-fast);
+    }
+
+    .accordion-header:hover {
+        background: var(--gray-50);
+        color: var(--accent-green);
+    }
+
+    .accordion-icon {
+        color: var(--accent-orange);
+        transition: transform var(--transition-normal);
+    }
+
+    .accordion-header[aria-expanded="true"] {
+        background: var(--gray-50);
+        color: var(--accent-green);
+    }
+
+    .accordion-header[aria-expanded="true"] .accordion-icon {
+        transform: rotate(180deg);
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--transition-normal) ease-out;
+        background: var(--bg-secondary);
+    }
+
+    .accordion-inner {
+        padding: 0 var(--space-6) var(--space-6) var(--space-6);
+        color: var(--text-secondary);
+        line-height: var(--lh-loose);
+    }
+</style>
+
+<script>
+    // Component specific logic executed once injected
+    (function () {
+        const headers = document.querySelectorAll('.accordion-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const expanded = header.getAttribute('aria-expanded') === 'true';
+
+                // Close all other accordions (Optional depending on preference)
+                headers.forEach(h => {
+                    h.setAttribute('aria-expanded', 'false');
+                    h.nextElementSibling.style.maxHeight = null;
+                });
+
+                // Toggle current
+                if (!expanded) {
+                    header.setAttribute('aria-expanded', 'true');
+                    const content = header.nextElementSibling;
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    })();
+</script>

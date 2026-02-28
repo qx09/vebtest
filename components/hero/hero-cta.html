@@ -1,0 +1,27 @@
+<div class="hero__cta-group animate-fade-in" style="animation-delay: 0.2s">
+    <a href="#/pages/products-hub.html" class="btn btn-primary btn-lg">
+        Explore Catalog
+    </a>
+    <a href="#/pages/contacts.html" class="btn btn-outline btn-lg">
+        Request a Quote
+    </a>
+</div>
+
+<style>
+    .hero__cta-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    @media (min-width: 480px) {
+        .hero__cta-group {
+            flex-direction: row;
+        }
+    }
+
+    .btn-lg {
+        padding: var(--space-4) var(--space-8);
+        font-size: var(--text-base);
+    }
+</style>

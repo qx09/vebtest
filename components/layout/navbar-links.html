@@ -1,0 +1,72 @@
+<nav class="navbar-links" id="navbar-links-menu">
+    <ul class="navbar-links__list">
+        <li class="navbar-links__item"><a href="#/pages/home.html" class="navbar-links__link"
+                data-i18n="nav_home">Home</a>
+        </li>
+        <li class="navbar-links__item">
+            <a href="#/pages/products-hub.html" class="navbar-links__link" data-i18n="nav_products">Products</a>
+        </li>
+        <li class="navbar-links__item"><a href="#/pages/production.html" class="navbar-links__link"
+                data-i18n="nav_production">Production</a></li>
+        <li class="navbar-links__item"><a href="#/pages/service.html" class="navbar-links__link"
+                data-i18n="nav_service">Service</a>
+        </li>
+        <li class="navbar-links__item"><a href="#/pages/applications-list.html" class="navbar-links__link"
+                data-i18n="nav_applications">Applications</a></li>
+        <li class="navbar-links__item"><a href="#/pages/team.html" class="navbar-links__link"
+                data-i18n="nav_team">Team</a></li>
+        <li class="navbar-links__item"><a href="#/pages/faq.html" class="navbar-links__link" data-i18n="nav_faq">FAQ</a>
+        </li>
+        <li class="navbar-links__item"><a href="#/pages/contacts.html" class="navbar-links__link"
+                data-i18n="nav_contacts">Contacts</a>
+        </li>
+    </ul>
+</nav>
+
+<style>
+    .navbar-links__list {
+        display: flex;
+        gap: var(--space-6);
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-links__item {
+        position: relative;
+    }
+
+    .navbar-links__link {
+        font-family: var(--font-sans);
+        font-weight: var(--font-medium);
+        font-size: var(--text-sm);
+        color: var(--text-primary);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding-block: var(--space-6);
+        /* Full height hit area */
+        display: block;
+        transition: color var(--transition-fast);
+    }
+
+    .navbar-links__link:hover {
+        color: var(--accent-green);
+    }
+
+    .navbar-links__link::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-green);
+        transition: width var(--transition-fast);
+    }
+
+    .navbar-links__link:hover::after,
+    .navbar-links__link.active::after {
+        width: 100%;
+    }
+
+    /* Mobile responsive styles handled in navbar.css */
+</style>

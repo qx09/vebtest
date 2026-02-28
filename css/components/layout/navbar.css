@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Navbar Core Styles
+   ========================================================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--gray-200);
+    z-index: 100;
+    height: 80px;
+    /* Fixed height for consistent layout */
+}
+
+/* Add body padding so content isn't hidden under navbar */
+body {
+    padding-top: 80px;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar__nav-area {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.navbar__mobile-toggle {
+    display: block;
+    color: var(--text-primary);
+    padding: var(--space-2);
+}
+
+/* Mobile Styles */
+@media (max-width: 1023px) {
+    .navbar-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: white;
+        padding: var(--space-6);
+        transform: translateX(100%);
+        transition: transform var(--transition-normal);
+        overflow-y: auto;
+    }
+
+    .navbar-links.is-open {
+        transform: translateX(0);
+    }
+
+    .navbar-links__list {
+        flex-direction: column;
+        gap: 0;
+        /* Let list items handle spacing on mobile */
+    }
+
+    .navbar-links__link {
+        font-size: var(--text-base);
+        padding-block: var(--space-4);
+        border-bottom: 1px solid var(--gray-100);
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .navbar__mobile-toggle {
+        display: none;
+    }
+}
